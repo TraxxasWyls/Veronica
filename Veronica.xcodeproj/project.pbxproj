@@ -3,11 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2E1F9D253EAB530085E43B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E1F9C253EAB530085E43B /* String.swift */; };
+		CB2E1FA0253EABBE0085E43B /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E1F9F253EABBE0085E43B /* Folder.swift */; };
 		CB9508D8253DF30300C57A34 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9508D7253DF30300C57A34 /* main.swift */; };
+		CB9508E1253DF46700C57A34 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = CB9508E0253DF46700C57A34 /* Files */; };
+		CB9508E6253E15B900C57A34 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9508E5253E15B900C57A34 /* File.swift */; };
+		CB9508EE253E1A8C00C57A34 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9508ED253E1A8C00C57A34 /* Optional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB2E1F9C253EAB530085E43B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CB2E1F9F253EABBE0085E43B /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		CB9508D4253DF30300C57A34 /* Veronica */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Veronica; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9508D7253DF30300C57A34 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CB9508E5253E15B900C57A34 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		CB9508EA253E15F300C57A34 /* String.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = String.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CB9508ED253E1A8C00C57A34 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9508E1253DF46700C57A34 /* Files in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				CB9508D6253DF30300C57A34 /* Veronica */,
+				CB9508E9253E15C800C57A34 /* Playgrounds */,
 				CB9508D5253DF30300C57A34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,8 +70,36 @@
 			isa = PBXGroup;
 			children = (
 				CB9508D7253DF30300C57A34 /* main.swift */,
+				CB9508E3253E159700C57A34 /* CoreLayer */,
 			);
 			path = Veronica;
+			sourceTree = "<group>";
+		};
+		CB9508E3253E159700C57A34 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CB9508E4253E15A600C57A34 /* Extensions */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		CB9508E4253E15A600C57A34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB9508ED253E1A8C00C57A34 /* Optional.swift */,
+				CB9508E5253E15B900C57A34 /* File.swift */,
+				CB2E1F9C253EAB530085E43B /* String.swift */,
+				CB2E1F9F253EABBE0085E43B /* Folder.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB9508E9253E15C800C57A34 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				CB9508EA253E15F300C57A34 /* String.playground */,
+			);
+			path = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +118,9 @@
 			dependencies = (
 			);
 			name = Veronica;
+			packageProductDependencies = (
+				CB9508E0253DF46700C57A34 /* Files */,
+			);
 			productName = Veronica;
 			productReference = CB9508D4253DF30300C57A34 /* Veronica */;
 			productType = "com.apple.product-type.tool";
@@ -105,6 +148,9 @@
 				Base,
 			);
 			mainGroup = CB9508CB253DF30300C57A34;
+			packageReferences = (
+				CB9508DF253DF46700C57A34 /* XCRemoteSwiftPackageReference "Files" */,
+			);
 			productRefGroup = CB9508D5253DF30300C57A34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -119,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9508E6253E15B900C57A34 /* File.swift in Sources */,
+				CB2E1FA0253EABBE0085E43B /* Folder.swift in Sources */,
 				CB9508D8253DF30300C57A34 /* main.swift in Sources */,
+				CB2E1F9D253EAB530085E43B /* String.swift in Sources */,
+				CB9508EE253E1A8C00C57A34 /* Optional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +335,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB9508DF253DF46700C57A34 /* XCRemoteSwiftPackageReference "Files" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Files";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB9508E0253DF46700C57A34 /* Files */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9508DF253DF46700C57A34 /* XCRemoteSwiftPackageReference "Files" */;
+			productName = Files;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB9508CC253DF30300C57A34 /* Project object */;
 }
