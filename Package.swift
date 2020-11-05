@@ -10,6 +10,10 @@ let package = Package(
             name: "Files",
             url: "https://github.com/johnsundell/files.git",
             from: "4.1.1"
+        ),
+        .package(
+            url: "https://github.com/apple/swift-argument-parser",
+            from: "0.3.0"
         )
     ],
     targets: [
@@ -18,8 +22,12 @@ let package = Package(
             dependencies: ["CommandLineToolCore"]
         ),
         .target(
-            name: "CommandLineToolCore",
+            name: "Extensions",
             dependencies: ["Files"]
+        ),
+        .target(
+            name: "CommandLineToolCore",
+            dependencies: ["Files", .product(name: "ArgumentParser", package: "swift-argument-parser"), "Extensions"]
         )
     ]
 )
