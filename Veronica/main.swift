@@ -1,20 +1,11 @@
-//
-//  main.swift
-//  Veronica
-//
-//  Created by Дмитрий Савинов on 19.10.2020.
-//
-
-import Foundation
+import CommandLineToolCore
 import Files
 
-let folder = try Folder(path: "/Users/savinov/Desktop/CalculatorHistory")
+let tool = CommandLineTool()
 
-var replacements = [
-    "CalculatorHistory": "History",
-    "Assembly": "AssemblyWhat"
-]
-
-try folder.renameAll(with: replacements)
-print("Hello, World!")
+do {
+    try tool.run()
+} catch {
+    print("Whoops! An error occurred: \(error)")
+}
 
