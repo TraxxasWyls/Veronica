@@ -20,10 +20,10 @@ struct Veronica: ParsableCommand {
     mutating func run() throws {
         print("""
             Creating project with name '\(projectName)'
-            in '\(path)'\'\(projectName)'
+            in '\(path)'
             """)
 
-        let originFolder = try Folder(path: "AppName")
+        let originFolder = try Folder(path: "/Users/savinov/Desktop/Veronica/AppName")
         let targetFolder: Folder
 
         do {
@@ -36,7 +36,8 @@ struct Veronica: ParsableCommand {
         try originFolder.copy(to: targetFolder)
 
         do {
-            try targetFolder.renameAll(with: ["AppName": projectName])
+            let projectFolder = try Folder(path: path + "/AppName")
+            try projectFolder.renameAll(with: ["AppName": projectName])
         }
         catch {
             throw RuntimeError("Couldn't write with name '\(projectName)'!")
