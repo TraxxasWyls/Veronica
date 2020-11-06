@@ -25,9 +25,9 @@ let package = Package(
             name: "Extensions",
             dependencies: ["Files"]
         ),
-        .target(
-            name: "CommandLineToolCore",
-            dependencies: ["Files", .product(name: "ArgumentParser", package: "swift-argument-parser"), "Extensions"]
-        )
+//        .target(
+//            name: "CommandLineToolCore",
+//            dependencies: ["Files", .product(name: "ArgumentParser", package: "swift-argument-parser"), "Extensions"]
+//        )
     ]
 )

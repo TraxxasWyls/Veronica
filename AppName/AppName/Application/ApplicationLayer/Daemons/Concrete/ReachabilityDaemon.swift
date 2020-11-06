@@ -1,6 +1,6 @@
 //
 //  ReachabilityDaemon.swift
-//  TheRun
+//  AppName
 //
 //  Created by incetro on 6/5/20.
 //  Copyright © 2020 Incetro Inc. All rights reserved.

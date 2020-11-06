@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBBBBDF025549725003FC9B2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* String.swift */; };
-		CBBBBDF925549727003FC9B2 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Optional.swift */; };
+		CBF8B40F2555B2E300B13C5D /* FileRefactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF8B3EE2555B2B600B13C5D /* FileRefactor.swift */; };
+		CBF8B4202555B2E800B13C5D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF8B3EF2555B2B600B13C5D /* String.swift */; };
+		CBF8B4312555B2EC00B13C5D /* FolderRenamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF8B3F02555B2B600B13C5D /* FolderRenamer.swift */; };
+		CBF8B4422555B2F000B13C5D /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF8B3F12555B2B600B13C5D /* Optional.swift */; };
 		OBJ_100 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* InputOrigin.swift */; };
 		OBJ_101 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Name.swift */; };
 		OBJ_102 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Parsed.swift */; };
@@ -26,10 +28,6 @@
 		OBJ_121 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
 		OBJ_122 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Veronica::Extensions::Product" /* Extensions.framework */; };
 		OBJ_123 /* Files.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Files::Files::Product" /* Files.framework */; };
-		OBJ_133 /* FileRefactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* FileRefactor.swift */; };
-		OBJ_134 /* FolderRenamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* FolderRenamer.swift */; };
-		OBJ_135 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Optional.swift */; };
-		OBJ_136 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* String.swift */; };
 		OBJ_138 /* Files.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Files::Files::Product" /* Files.framework */; };
 		OBJ_144 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Files.swift */; };
 		OBJ_151 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Package.swift */; };
@@ -124,11 +122,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBF8B3EE2555B2B600B13C5D /* FileRefactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileRefactor.swift; sourceTree = "<group>"; };
+		CBF8B3EF2555B2B600B13C5D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CBF8B3F02555B2B600B13C5D /* FolderRenamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderRenamer.swift; sourceTree = "<group>"; };
+		CBF8B3F12555B2B600B13C5D /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		"Files::Files::Product" /* Files.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Files.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_11 /* FileRefactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRefactor.swift; sourceTree = "<group>"; };
-		OBJ_12 /* FolderRenamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderRenamer.swift; sourceTree = "<group>"; };
-		OBJ_13 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
-		OBJ_14 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		OBJ_16 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_22 /* BashCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BashCompletionsGenerator.swift; sourceTree = "<group>"; };
 		OBJ_23 /* CompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsGenerator.swift; sourceTree = "<group>"; };
@@ -224,17 +222,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* Extensions */ = {
+		CBF8B3ED2555B2B600B13C5D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* FileRefactor.swift */,
-				OBJ_12 /* FolderRenamer.swift */,
-				OBJ_13 /* Optional.swift */,
-				OBJ_14 /* String.swift */,
+				CBF8B3EE2555B2B600B13C5D /* FileRefactor.swift */,
+				CBF8B3EF2555B2B600B13C5D /* String.swift */,
+				CBF8B3F02555B2B600B13C5D /* FolderRenamer.swift */,
+				CBF8B3F12555B2B600B13C5D /* Optional.swift */,
 			);
 			name = Extensions;
 			path = Sources/Extensions;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		OBJ_15 /* Veronica */ = {
 			isa = PBXGroup;
@@ -340,7 +338,7 @@
 			path = Parsing;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -350,7 +348,6 @@
 				OBJ_66 /* Products */,
 				OBJ_72 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_53 /* Usage */ = {
@@ -399,8 +396,8 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CBF8B3ED2555B2B600B13C5D /* Extensions */,
 				OBJ_8 /* CommandLineToolCore */,
-				OBJ_10 /* Extensions */,
 				OBJ_15 /* Veronica */,
 			);
 			name = Sources;
@@ -564,7 +561,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -594,10 +591,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_133 /* FileRefactor.swift in Sources */,
-				OBJ_134 /* FolderRenamer.swift in Sources */,
-				OBJ_135 /* Optional.swift in Sources */,
-				OBJ_136 /* String.swift in Sources */,
+				CBF8B4202555B2E800B13C5D /* String.swift in Sources */,
+				CBF8B4312555B2EC00B13C5D /* FolderRenamer.swift in Sources */,
+				CBF8B40F2555B2E300B13C5D /* FileRefactor.swift in Sources */,
+				CBF8B4422555B2F000B13C5D /* Optional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,8 +603,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_144 /* Files.swift in Sources */,
-				CBBBBDF925549727003FC9B2 /* Optional.swift in Sources */,
-				CBBBBDF025549725003FC9B2 /* String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

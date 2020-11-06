@@ -13,6 +13,8 @@
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 // swiftlint:disable deployment_target
+// swiftlint:disable no_extension_access_modifier
+// swiftlint:disable strict_fileprivate
 
 @available(*, deprecated, renamed: "ImageAsset")
 internal typealias AssetType = ImageAsset

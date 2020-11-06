@@ -1,6 +1,6 @@
 //
 //  LogoutDaemon.swift
-//  TheRun
+//  AppName
 //
 //  Created by incetro on 23/12/2019.
 //  Copyright © 2019 Incetro Inc. All rights reserved.
