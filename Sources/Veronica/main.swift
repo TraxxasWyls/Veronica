@@ -1,6 +1,6 @@
 import ArgumentParser
 import Files
-import Extensions
+import CommandLineToolCore
 import Foundation
 
 struct Veronica: ParsableCommand {

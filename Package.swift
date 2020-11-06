@@ -19,15 +19,13 @@ let package = Package(
     targets: [
         .target(
             name: "Veronica",
-            dependencies: ["CommandLineToolCore"]
+            dependencies: ["CommandLineToolCore",
+                           .product(name: "ArgumentParser", package: "swift-argument-parser")
+            ]
         ),
         .target(
-            name: "Extensions",
+            name: "CommandLineToolCore",
             dependencies: ["Files"]
-        ),
-//        .target(
-//            name: "CommandLineToolCore",
-//            dependencies: ["Files", .product(name: "ArgumentParser", package: "swift-argument-parser"), "Extensions"]
-//        )
+        )
     ]
 )
